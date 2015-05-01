@@ -1,6 +1,5 @@
 
 var filterMod = require('./filter-module.js') ;
-
 var cb = function(err, data) {
 	if (err) {
 		console.log(err) ;
@@ -11,7 +10,6 @@ var cb = function(err, data) {
 		data.forEach(function(el, i) {console.log(el)}) ;
 	}
 }
-
 filterMod(process.argv[2], process.argv[3], cb);
 
 
