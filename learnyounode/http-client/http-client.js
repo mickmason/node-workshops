@@ -9,7 +9,4 @@ http.get(process.argv[2], function(resp) {
 	resp.on('error', function(err) {
 		console.log(err) ;
 	}) ;
-	resp.on('end', function() {
-		console.log("End") ;
-	}) ;
 });
