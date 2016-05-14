@@ -1,5 +1,5 @@
-var total = 0;
-for (var i=2; i<process.argv.length; i++) {
-	total += Number(process.argv[i]) ;
-}
-console.log(total) ;
+var count = 0;
+process.argv.forEach(function(val, i, arr){
+	(i > 1) ? count += Number(val) : true ;
+});
+console.log(count);
